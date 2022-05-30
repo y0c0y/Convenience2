@@ -8,7 +8,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp">
 
         <Button
             android:id="@+id/C_GS"
@@ -31,10 +32,51 @@
             app:backgroundTint="#003CB3" />
 
 
-
     </LinearLayout>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="69dp">
+
+        <android.support.design.chip.ChipGroup
+            android:id="@+id/chip_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleLine="true"
+            android:layout_marginLeft="112dp"
+            android:layout_marginTop="10dp"
+            tools:layout_editor_absoluteX="111dp"
+            tools:layout_editor_absoluteY="94dp">
+
+            <android.support.design.chip.Chip
+                android:id="@+id/rep"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="rep"
+                android:textSize="20dp" />
+
+            <android.support.design.chip.Chip
+                android:id="@+id/oPo"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="1+1"
+                android:textSize="16dp" />
+
+            <android.support.design.chip.Chip
+                android:id="@+id/tPo"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="2+1"
+                android:textSize="16dp" />
 
 
+        </android.support.design.chip.ChipGroup>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
