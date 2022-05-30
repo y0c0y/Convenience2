@@ -18,16 +18,18 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:onClick="onCUClicked"
-            android:text="CU" />
+            android:text="CU"
+            app:backgroundTint="#673AB7" />
 
         <Button
             android:id="@+id/RtoM"
-            android:onClick="onRToMainClicked"
-            android:layout_margin="10dp"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_margin="10dp"
             android:layout_weight="1"
-            android:text="메인화면" />
+            android:onClick="onRToMainClicked"
+            android:text="메인화면"
+            app:backgroundTint="#003CB3" />
 
 
 

@@ -19,14 +19,16 @@
             android:onClick="onGS25Clicked"
             android:text="GS25"
             app:backgroundTint="#2196F3" />
+
         <Button
             android:id="@+id/RtoM"
-            android:layout_margin="10dp"
-            android:onClick="onRToMainClicked"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_margin="10dp"
             android:layout_weight="1"
-            android:text="메인화면" />
+            android:onClick="onRToMainClicked"
+            android:text="메인화면"
+            app:backgroundTint="#003CB3" />
 
 
 

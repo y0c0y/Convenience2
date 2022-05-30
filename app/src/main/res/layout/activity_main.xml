@@ -22,7 +22,7 @@
             android:onClick="onSaleClicked"
             android:text="할인 정보"
             android:textSize="20dp"
-            app:backgroundTint="@color/purple_200" />
+            app:backgroundTint="#003CB3" />
 
         <Button
             android:id="@+id/Map"
@@ -30,10 +30,10 @@
             android:layout_height="100dp"
             android:layout_marginLeft="75dp"
             android:layout_marginTop="155dp"
-            android:text="편의점 위치"
             android:onClick="onMapsClicked"
+            android:text="편의점 위치"
             android:textSize="20dp"
-            app:backgroundTint="@color/purple_200" />
+            app:backgroundTint="#003CB3" />
 
 
     </LinearLayout>
