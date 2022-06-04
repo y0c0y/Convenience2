@@ -30,4 +30,23 @@ public class gs_25 extends AppCompatActivity {
         startActivity(ACT_Main);
 
     }
+
+    public void onGS_SPEClicked(View v)
+    {
+        Toast.makeText(this, "GS Special", Toast.LENGTH_LONG).show();
+        Intent ACT_spe = new Intent(this,GS_SPE.class);
+        startActivity(ACT_spe);
+    }
+    public void onGS_OPOClicked(View v)
+    {
+        Toast.makeText(this, "GS 1 + 1", Toast.LENGTH_LONG).show();
+        Intent ACT_opo = new Intent(this,GS_OPO.class);
+        startActivity(ACT_opo);
+    }
+    public void onGS_TPOClicked(View v)
+    {
+        Toast.makeText(this, "GS 2 + 1", Toast.LENGTH_LONG).show();
+        Intent ACT_tpo = new Intent(this,GS_TPO.class);
+        startActivity(ACT_tpo);
+    }
 }

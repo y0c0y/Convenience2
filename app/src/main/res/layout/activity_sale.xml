@@ -5,78 +5,84 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SaleActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="0dp">
+        android:layout_height="60dp"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/C_GS"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="10dp"
             android:onClick="onGS25Clicked"
             android:text="GS25"
+            android:textSize="20dp"
+
             app:backgroundTint="#2196F3" />
 
         <Button
             android:id="@+id/RtoM"
-            android:layout_width="50dp"
+            android:layout_width="180dp"
             android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+
             android:onClick="onRToMainClicked"
             android:text="메인화면"
+            android:textSize="20dp"
             app:backgroundTint="#003CB3" />
 
 
     </LinearLayout>
 
-
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_width="413dp"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="69dp">
+        tools:layout_editor_absoluteY="60dp">
 
-        <android.support.design.chip.ChipGroup
-            android:id="@+id/chip_group"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:singleLine="true"
-            android:layout_marginLeft="112dp"
-            android:layout_marginTop="10dp"
-            tools:layout_editor_absoluteX="111dp"
-            tools:layout_editor_absoluteY="94dp">
+        <Button
+            android:id="@+id/spe"
+            android:onClick="onCU_SPEClicked"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="70dp"
+            android:textSize="40dp"
+            android:layout_marginTop="100dp"
+            app:backgroundTint="#673AB7"
+            android:text="CU PB"
+            />
 
-            <android.support.design.chip.Chip
-                android:id="@+id/rep"
-                style="@style/Widget.Material3.Chip.Filter"
-                android:layout_width="60dp"
-                android:layout_height="30dp"
-                android:text="rep"
-                android:textSize="20dp" />
+        <Button
+            android:id="@+id/oPo"
+            android:onClick="onCU_OPOClicked"
 
-            <android.support.design.chip.Chip
-                android:id="@+id/oPo"
-                style="@style/Widget.Material3.Chip.Filter"
-                android:layout_width="60dp"
-                android:layout_height="30dp"
-                android:text="1+1"
-                android:textSize="16dp" />
+            android:layout_marginTop="100dp"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="70dp"
+            android:textSize="40dp"
+            app:backgroundTint="#673AB7"
+            android:text="1+1"
+             />
 
-            <android.support.design.chip.Chip
-                android:id="@+id/tPo"
-                style="@style/Widget.Material3.Chip.Filter"
-                android:layout_width="60dp"
-                android:layout_height="30dp"
-                android:text="2+1"
-                android:textSize="16dp" />
-
-
-        </android.support.design.chip.ChipGroup>
+        <Button
+            android:id="@+id/tPo"
+            android:onClick="onCU_TPOClicked"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="70dp"
+            android:textSize="40dp"
+            android:layout_marginTop="100dp"
+            app:backgroundTint="#673AB7"
+            android:checkable="true"
+            android:text="2+1" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

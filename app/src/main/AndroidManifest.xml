@@ -13,6 +13,24 @@
         android:theme="@style/Theme.Convenience"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".GS_TPO"
+            android:exported="false" />
+        <activity
+            android:name=".GS_OPO"
+            android:exported="false" />
+        <activity
+            android:name=".GS_SPE"
+            android:exported="false" />
+        <activity
+            android:name=".CU_TPO"
+            android:exported="false" />
+        <activity
+            android:name=".CU_OPO"
+            android:exported="false" />
+        <activity
+            android:name=".CU_SPE"
+            android:exported="false" />
+        <activity
             android:name=".gs_25"
             android:exported="false" />
         <activity
